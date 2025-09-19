@@ -10,6 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CakeShopDbContext>(options =>
     options.UseSqlServer(builder.Configuration["ConnectionStrings:CakeShopDb"]));
 
+
 var app = builder.Build();
 
 app.UseStaticFiles();
